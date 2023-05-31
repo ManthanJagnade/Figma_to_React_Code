@@ -1,0 +1,40 @@
+// sectionone.scss
+
+@import "./variables";
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+
+  .section-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 50px 50px;
+
+    .inner-content {
+      h1 {
+        @include word-style($fweight: 500, $fontSize: 50px, $lineheight: 70px);
+      }
+
+      p {
+        @include word-style($fweight: 400, $fontSize: 16px, $lineheight: 30px);
+      }
+
+      button {
+        border: none;
+        padding: 17px 77px 17px 77px;
+        background: #f53838;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .section-logo {
+    img {
+      width: 511.24px;
+      height: 382.44px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+// _variables.scss
+
+$red: #f53855;
+$geryblue: #4f5665;
+
+@mixin word-style($fweight, $fontSize, $lineheight) {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: $fweight;
+  font-size: $fontSize;
+  line-height: $lineheight;
+}

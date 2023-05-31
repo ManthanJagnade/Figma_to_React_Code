@@ -1,0 +1,57 @@
+// header.scss
+
+@import "./variables";
+
+.headersection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 50px 100px 0px 0px;
+
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-button {
+    display: flex;
+    flex-direction: row;
+
+    button {
+      border: none;
+      color: $geryblue;
+      background-color: transparent;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .sign-in-up {
+    button:nth-child(1) {
+      padding-top: 22px;
+      border: none;
+      background-color: transparent;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    button:nth-child(2) {
+      border: 1px solid $red;
+      color: $red;
+      padding: 7px 15px;
+      border-radius: 50px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
